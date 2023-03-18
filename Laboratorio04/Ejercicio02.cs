@@ -10,7 +10,14 @@ namespace Laboratorio04
     {
         public double[] Calcular(int[] nums)
         {
-            return new double[] {0.0, 0.0};
+            double suma = 0.0;
+            foreach (int num in nums)
+            {
+                suma = suma + nums;
+            }
+
+            double promedio = suma / nums.length;
+            return new double[] {suma, promedio};
         }
     }
 }
